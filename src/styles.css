@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  min-width: 450px;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("Mona-Sans.woff2") format("woff2 supports variations"),
+    url("Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #121316;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #17171f;
+  --bg-secondary: #141418;
+  font-family: "Mona Sans";
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+@media screen and (max-width: 960px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f122;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.wrapper .button {
+  z-index: 99999;
+  pointer-events: fill;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 65px 0 0 0;
+  margin-right: 15px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  font-stretch: 110%;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-out;
+}
+.wrapper .button .icon i {
+  color: #000;
+}
+
+.wrapper .button:nth-child(1):hover {
+  width: 170px;
+}
+.wrapper .button:nth-child(2):hover {
+  width: 195px;
+}
+.wrapper .button:nth-child(3):hover {
+  width: 180px;
+}
+.wrapper .button:nth-child(3) span {
+  color: black;
+}
+.wrapper .button:nth-child(3):hover span {
+  color: rgba(249, 104, 84, 1);
+  font-stretch: 125%;
+}
+@media screen and (min-width: 960px) {
+  .wrapper .button:nth-child(3) {
+    width: 180px;
+    box-shadow: 0px 0px 0px 3px rgba(249, 104, 84, 0);
+  }
+  .wrapper .button:nth-child(3):hover {
+    width: 250px;
+    box-shadow: 0px 0px 0px 3px rgba(249, 104, 84, 1);
+  }
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon {
+  transform: scale(0.8);
+}
+.wrapper .button:nth-child(1):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #2aabee;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #f96854;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  margin-left: 70px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #2aabee;
+}
